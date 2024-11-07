@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {MyServiceComponent} from './my-service/my-service.component'
+import {RandomNumberService} from './random-number-service'
 
 @Component({
   selector: 'app-root',
@@ -10,5 +10,5 @@ import {MyServiceComponent} from './my-service/my-service.component'
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  constructor(protected service: MyServiceComponent) {}
+  constructor(protected service: RandomNumberService) {}
 }
