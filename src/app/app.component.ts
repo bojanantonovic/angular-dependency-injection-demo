@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {MyServiceComponent} from './my-service/my-service.component'
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-dependency-injection-demo';
+  constructor(protected service: MyServiceComponent) {}
 }
